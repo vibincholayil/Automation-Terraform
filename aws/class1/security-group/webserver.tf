@@ -1,8 +1,8 @@
-resource "aws_instance" "vijayec2" {
+resource "aws_instance" "careerbytecode" {
   ami                    = "ami-0b0dcb5067f052a63"
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.webserver_sg.id}"]
-  key_name               = "terraform"
+  key_name               = "careerbytecode"
   tags = {
     Name = "CareerByteCode All in One Technology Platform For IT Job Seekers"
   }
