@@ -78,21 +78,21 @@ terraform show -json main.tfplan > plan.json
 - Read the JSON file: The plan.json file can now be used for further analysis or programmatically parsed by other tools.
 
 
+# Terraform
 
-
-What is Terraform?
+## What is Terraform?
 Terraform is a tool that helps you create, manage, and update infrastructure (like servers, networks, and databases) using code. Imagine it like a blueprint or recipe for setting up IT resources in the cloud. Instead of manually setting up servers or networks, you write code that describes what you want, and Terraform takes care of building it for you.
 
-Why Terraform?
+## Why Terraform?
 Terraform makes managing IT infrastructure easy, especially when dealing with large or complex setups. Instead of clicking around in cloud dashboards, you can use a single file that automatically creates everything you need. It's like programming a robot to set up your cloud resources.
 
-What is the Use of Terraform?
+## What is the Use of Terraform?
 Terraform is mainly used for Infrastructure as Code (IaC). It allows you to automate cloud infrastructure setup, track changes, and create consistent environments across different clouds like AWS, Azure, and Google Cloud. For example, if you want to launch 100 servers on AWS, Terraform can do it in a few minutes with just a script.
 
-What is the Difference Between Ansible and Terraform (Layman Example)?
-Terraform: Imagine you’re setting up a new house. You write down a plan for how many rooms you need, where the windows go, and which appliances you want. Terraform is the tool that follows this plan to build your house from scratch.
+## What is the Difference Between Ansible and Terraform (Layman Example)?
+*Terraform* : Imagine you’re setting up a new house. You write down a plan for how many rooms you need, where the windows go, and which appliances you want. Terraform is the tool that follows this plan to build your house from scratch.
 
-Ansible: Now, imagine that after the house is built, you need to paint the walls, set up the TV, and install security cameras. Ansible is the tool you use to configure and make changes to the house after it’s already built.
+*Ansible*: Now, imagine that after the house is built, you need to paint the walls, set up the TV, and install security cameras. Ansible is the tool you use to configure and make changes to the house after it’s already built.
 
 In short:
 
