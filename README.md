@@ -1,5 +1,7 @@
 # Terraform-Automation
 
+- **https://registry.terraform.io/browse/providers**
+
 # Visual studio code
 
 - https://code.visualstudio.com/download
