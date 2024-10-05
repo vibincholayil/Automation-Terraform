@@ -1,6 +1,6 @@
 variable "bucket_prefix" {
   type    = string
-  default = "cnl123bucketterraform"
+  default = "careerbytecode-all-in-one-tech-job-platform"
 }
 
 locals {

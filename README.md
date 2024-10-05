@@ -1,6 +1,21 @@
-# terraform
+# Terraform-Automation
 
-download azure cli and install it
+# Visual studio code
+
+- https://code.visualstudio.com/download
+- post installaiton install extensions
+---  aws toolkit
+--- azure account
+
+# AWS
+
+- install awscli
+- https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+# AZURE
+
+## Download azure cli and install it
 
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#run-the-azure-cli
 

@@ -1,5 +1,5 @@
 locals {
-  bucket_name = "mytest-cnl-12345"
+  bucket_name = "mygrowth-cbc-platform-usecases"
   env         = "dev"
 }
 
