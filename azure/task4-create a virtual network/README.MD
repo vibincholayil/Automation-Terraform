@@ -1,0 +1,1 @@
+- https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-terraform?tabs=azure-cli
