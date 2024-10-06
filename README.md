@@ -2,6 +2,10 @@
 
 - **https://registry.terraform.io/browse/providers**
 
+- # download terraform exe file - https://developer.hashicorp.com/terraform/install
+
+- download **AMD64** copy the terraform.exe file to C:\Windows\System32 directory
+
 # Visual studio code
 
 - https://code.visualstudio.com/download
