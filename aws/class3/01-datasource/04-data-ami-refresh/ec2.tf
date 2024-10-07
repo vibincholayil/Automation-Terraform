@@ -13,3 +13,8 @@ resource "aws_instance" "app" {
   ami           = data.aws_ami.ecs_optimized_ami.id
   instance_type = "t2.micro"
 }
+
+output "ami_owner_id" {
+  value = data.aws_ami.ecs_optimized_ami.owner_id
+
+}

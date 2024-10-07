@@ -1,7 +1,7 @@
 locals {
   bucket_name1 = "mytest-cnl-12345"
   bucket_name2 = "mytest-cnl-123452023"
-  env         = "dev1"
+  env          = "dev1"
 }
 
 
@@ -21,7 +21,7 @@ resource "aws_s3_bucket" "my_test_bucket2" {
 
   tags = {
     Name        = local.bucket_name2
-    Mail = "vijay@cloudnloud.com"
+    Mail        = "careerbytec@gmail.com"
     Environment = local.env
   }
 }
