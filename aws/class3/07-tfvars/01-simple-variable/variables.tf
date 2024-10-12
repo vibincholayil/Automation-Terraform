@@ -5,13 +5,13 @@ variable "aws_region" {
 
 
 variable "vpc-cidr" {
-  default = "10.0.0.0/16"
+  default = "20.0.0.0/16"
 }
 
 variable "pubsubcidr" {
-  default = "10.0.1.0/24"
+  default = "20.0.1.0/24"
 }
 
 variable "prisubcidr" {
-  default = "10.0.2.0/24"
+  default = "20.0.2.0/24"
 }

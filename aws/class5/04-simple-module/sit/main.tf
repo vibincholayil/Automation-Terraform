@@ -6,6 +6,6 @@ module "my_instance_module" {
   source        = "../my_modules/instance"
   ami           = "ami-0a606d8395a538502"
   instance_type = "t2.micro"
-  instance_name = "sit-vijay"
+  instance_name = "sit-cbc"
 
 }  
