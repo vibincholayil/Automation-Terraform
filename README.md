@@ -62,6 +62,13 @@ from visual studio code run the below command
 az login --tenant 0f152234eea-8f7d-4423423223e3-a047-9fb1d0984f6623423432
 ```
 
+The  try this command form visual studio code to ensure your visual studio code terminal is connected to azure cloud
+
+```
+az vm list
+```
+
+
 go to learn.microsoft.com/en-us/azure/  --> any services --> go to quickstart --> terraform 
 
 
