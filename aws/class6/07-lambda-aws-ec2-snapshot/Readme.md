@@ -6,33 +6,29 @@ Instance tagname
 
         Name = demo
 
-Ubuntu
+terraform install - https://developer.hashicorp.com/terraform/install
 
-    $ wget https://releases.hashicorp.com/terraform/0.13.5/terraform_0.13.5_linux_amd64.zip
-    $ unzip terraform_0.13.5_linux_amd64.zip
-    $ sudo mv terraform /usr/local/bin
 
 Reference:
 
     https://www.terraform.io/downloads.html
 
-variables:
+update your values in the 5-variable.auto.tfvars file:
 
     accessKey           =""
     secretKey           =""
     region              ="eu-west-1"
-    lambdaname          ="lambda-aws-ec2-snopshot"
-    tagName       = "office-hours"
-    tagValue      = "cnl-data-platform"
+    lambdaname          ="lambda-aws-ec2-start"
+    tagname             ="office-hours"
+    tagvalue            ="cbc-platform"
 
 commands
 
     1. terraform version
     2. terraform init
-    3. terraform plan -var-file=5-variable.tfvars
-    4. terraform apply -var-file=5-variable.tfvars
-    5. terraform destroy -var-file=5-variable.tfvars
-
+    3. terraform plan
+    4. terraform apply
+    5. terraform destroy
 
 | crontab timing | Days |
 | --------------- | --------------- |
