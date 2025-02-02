@@ -1,0 +1,6 @@
+accessKey           ="XXXXXXXXXXXXX"
+secretKey           ="XXXXXXXXXXXXX"
+region              ="us-east-1"
+lambdaname          ="lambda-aws-ec2-start"
+tagname             ="office-hours"
+tagvalue            ="cbc-platform"
