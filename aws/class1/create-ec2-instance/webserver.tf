@@ -9,13 +9,26 @@ resource "aws_instance" "My-Webserver" {
   key_name  = "my_keypair_2025"
   user_data = <<EOF
 #!/bin/bash -xe
-exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
-/usr/bin/apt-get update
-DEBIAN_FRONTEND=noninteractive /usr/bin/apt-get upgrade -yq
-/usr/bin/apt-get install apache2 -y
-/usr/sbin/ufw allow in "Apache Full"
-/bin/echo "Hello world " >/var/www/html/index.html
-service apche2 start
+
+# Log user-data output
+exec > >(tee /var/log/user-data.log | logger -t user-data -s 2>/dev/console) 2>&1
+
+# Update and upgrade packages
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq
+
+# Install Apache
+apt-get install apache2 -y
+
+# Allow Apache through UFW (optional if UFW is used)
+ufw allow in "Apache Full" || true
+
+# Create a simple web page
+echo "Hello world" > /var/www/html/index.html
+
+# Ensure Apache is started and enabled
+systemctl start apache2
+systemctl enable apache2
 
 EOF
 }
