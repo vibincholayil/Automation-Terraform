@@ -1,5 +1,5 @@
 resource "aws_security_group" "webserver_sg" {
-    name = myvpc
+    name = "myvpc"
     vpc_id = "vpc-024442e13996eb6e4"
 
   ingress {
