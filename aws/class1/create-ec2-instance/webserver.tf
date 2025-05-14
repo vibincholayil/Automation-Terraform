@@ -6,7 +6,7 @@ resource "aws_instance" "My-Webserver" {
   tags = {
     Name = "My-Webserver"
   }
-  key_name  = "careerbytecode"
+  key_name  = "my_keypair_2025"
   user_data = <<EOF
 #!/bin/bash -xe
 exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
