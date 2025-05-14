@@ -1,6 +1,7 @@
-resource "aws_security_group" "webserver_sg" { 
+resource "aws_security_group" "webserver_sg" {
+  vpc_id = vpc-024442e13996eb6e4
 
-    ingress {
+  ingress {
         from_port = 80
         to_port = 80
         protocol = "tcp"
@@ -20,3 +21,6 @@ egress {
     cidr_blocks     = ["0.0.0.0/0"]
   }    
 }
+
+
+    
