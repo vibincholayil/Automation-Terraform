@@ -1,6 +1,6 @@
 resource "aws_instance" "My-Webserver" {
 
-  ami                    = "ami-0a313d6098716f372"
+  ami                    = "ami-0fc32db49bc3bfbb1"
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["${aws_security_group.webserver_sg.id}"]
   tags = {
